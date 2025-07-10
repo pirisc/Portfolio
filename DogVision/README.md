@@ -52,7 +52,7 @@ This repository contains the following components:
 
 **Live Demo**
 
-For a live demonstration, visit the deployed Gradio app hosted on [Hugging Face]("https://huggingface.co/spaces/Sairii/Dog_Breeds"). Upload an image of a dog, and the model will predict the breed in real-time.
+For a live demonstration, visit the deployed Gradio app hosted on [Hugging Face](https://huggingface.co/spaces/Sairii/Dog_Breeds). Upload an image of a dog, and the model will predict the breed in real-time.
 
 **Dataset**
 
