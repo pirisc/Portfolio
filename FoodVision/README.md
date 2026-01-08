@@ -6,7 +6,7 @@ The FoodVision Classifier is a deep learning model built with PyTorch that class
 
 The model is deployed via Gradio and hosted on Hugging Face, providing users with an interactive interface to classify food categories in real-time by simply uploading an image.
 
-This project is divided in two parts. The first part works with only 20% of the whole 101 dataset and the second part works with the entery dataset. 
+This project is divided in two parts. The first part works with only 20% of the whole dataset and only with 3 food categories (pizza, sushi and steak) and the second part works with, also, the 20% of the dataset but with the 101 food categories.
 
 ## **Project Structure**
 
@@ -19,7 +19,7 @@ This repository contains the following components:
         * First model will be an EffNetB2
         * Second model will be an ViT
           
-      In the case of our project, first we work with only 20% of the data (only with the pizza, steak and sushi categories). Later we will use what we learn from this data to the whole dataset.
+      In the case of our project, first we work with only 20% of the data and 3 different food categories(only with the pizza, steak and sushi categories). Later we will use what we learn from this data to the include the other food categories in the  dataset.
 
     * Evaluation: Testing the model’s performance on unseen images.
 
