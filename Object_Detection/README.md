@@ -92,6 +92,8 @@ Key concepts practiced:
 
 This model is not perfect but it is the start of working with Object Detection and everything related with it. 
 
+You can find the Gradio demo of this project [here](https://huggingface.co/spaces/Sairii/trashify_demo_v1)
+
 
 
 
