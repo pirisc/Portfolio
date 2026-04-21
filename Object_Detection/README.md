@@ -22,6 +22,16 @@ The application rewards users with **+1 point** when all three target items — 
 | **Base Model** | `mrdbourke/rt_detrv2_finetuned_trashify_box_detector_v1` |
 | **Framework** | PyTorch + Hugging Face Transformers |
 
+
+## Why RT-DETRv2?
+
+We use RT-DETRv2 because:
+- It is a transformer-based dector that is fast enough for real-time use, unlike the original slow DETR.
+- It does not need NMS because it uses learned object queries + bipartite matching to predict unique objects directly.
+- The transforme attention lets it reason about global image context, not just local patches like CNNs do. 
+
+---
+
 ## 🏷️ Detected Classes
  
 The model detects the following seven classes:
