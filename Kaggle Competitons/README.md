@@ -46,8 +46,8 @@ The classic entry point to Kaggle. Predict survival on the Titanic using passeng
  
 | Competition | Best Score | Metric |
 |---|---|---|
-| Spaceship Titanic | — | Accuracy |
-| Titanic | — | Accuracy |
+| Spaceship Titanic | 0.80430 | Accuracy |
+| Titanic | 0.66507 | Accuracy |
  
 *Scores will be updated as notebooks are refined.*
  
