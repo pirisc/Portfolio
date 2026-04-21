@@ -92,9 +92,19 @@ Sentiment analysis model trained on the **IMDb Large Movie Review Dataset** — 
 
 #### 😍​😀​😶‍🌫️​😭​ VibeMood — Text Mood Classifier
 
-> Python · NLP · Text Classification
-
-Text classification model that goes beyond binary sentiment to capture mood and emotional tone from short-form text. Built to explore multi-class emotional classification and the nuances of subjective language.
+> HuggingFace Transformers · DistilBERT · Fine-tuning · Gradio · HuggingFace Spaces · PyTorch
+ 
+End-to-end NLP project in two phases: fine-tuning a transformer model for **8-class emotion classification**, then building a human-centered application around it. The full pipeline goes from raw dataset to deployed product.
+ 
+**Phase 1 — Training Pipeline:**
+- Fine-tuned `distilbert-base-uncased` on [`Sairii/mood_dataset`](https://huggingface.co/datasets/Sairii/mood_dataset) (6,561 labeled samples) for multi-class emotion classification across 8 categories: sad, angry, anxious, joy, tired, numb, confident, hopeful
+- Full supervised training pipeline: label encoding → tokenization → `Trainer` API → evaluation → HuggingFace Hub deployment
+- Model hosted publicly at [`Sairii/mood_classifier_distilbert`](https://huggingface.co/Sairii/mood_classifier_distilbert)
+**Phase 2 — Vibe App:**
+- Wrapped the trained model in a Gradio interface that returns a full emotional support package per detected mood: Spotify playlists, memes, inspirational images, quotes, self-care tips, and affirmations
+- Hand-crafted `vibe_map` — a curated content layer organized by emotion and category, randomly sampled at inference time for variety
+- Checkbox UI lets users select only the output types they want — intentional UX decision to avoid information overload
+🔗 [Live Demo](https://huggingface.co/spaces/Sairii/VibeMoodClassification) · [Model](https://huggingface.co/Sairii/mood_classifier_distilbert) · [Dataset](https://huggingface.co/datasets/Sairii/mood_dataset)
 
 ---
 
