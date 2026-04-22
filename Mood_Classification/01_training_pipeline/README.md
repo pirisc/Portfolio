@@ -96,7 +96,7 @@ mood_classifier = pipeline(
 ```
 
 ### Step 8 — Gradio Demo & Deployment
-A Gradio interface wraps the classifier and affirmation logic, then the entire demo folder is uploaded to HuggingFace Spaces via `upload_folder`.
+A Gradio interface wraps the classifier and affirmation logic, then the entire demo folder is uploaded to HuggingFace Spaces via `upload_folder`. [Here](https://huggingface.co/spaces/Sairii/mood_text_classifier) you can find the live version of this proyect. 
 
 ---
 
