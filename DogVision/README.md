@@ -1,89 +1,112 @@
-# **Dog Breed Classifier**
+# 🐾 Dog Breed Classifier
 
+> *120 breeds. 10,000+ images. One model that knows dogs better than most dog owners.*
 
-## **Overview**
+A deep learning image classifier built with **PyTorch** that identifies dog breeds in real-time. Upload a photo, get a prediction — simple as that. Powered by a convolutional neural network trained on the [Kaggle Dog Breed Identification dataset](https://www.kaggle.com/c/dog-breed-identification) and deployed live on Hugging Face Spaces.
 
-The Dog Breed Classifier is a deep learning model built with PyTorch that classifies dog breeds from a dataset containing over 10,000 labeled images across 120 different breeds. This project aims to demonstrate the application of convolutional neural networks (CNNs) in image classification tasks, specifically for identifying dog breeds.
+---
 
-The model is deployed via Gradio and hosted on Hugging Face, providing users with an interactive interface to classify dog breeds in real-time by simply uploading an image.
+## 🚀 Live Demo
 
-## **Project Structure**
+**Try it now →** [Dog Breeds Classifier on Hugging Face](https://huggingface.co/spaces/Sairii/Dog_Breeds)
 
-This repository contains the following components:
+No setup needed. Just upload a dog photo and watch it work.
 
-* `Dog_Vision.ipynb`: The primary Jupyter notebook that contains the entire process:
+---
 
-  * Data Preprocessing: Loading and preparing the Kaggle dataset.
+## 📌 What This Project Does
 
-  * Model Training: Building and training the convolutional neural network using PyTorch.
+This project walks through the **full machine learning pipeline** — from raw data to a deployed, interactive web app:
 
-  * Evaluation: Testing the model’s performance on unseen images.
+| Stage | What happens |
+|---|---|
+| 📦 Data Preprocessing | Load and prepare labeled images from Kaggle |
+| 🧠 Model Training | Train a CNN using PyTorch on 120 dog breeds |
+| 📊 Evaluation | Test model accuracy on held-out images |
+| 🌐 Deployment | Launch a Gradio interface hosted on Hugging Face |
 
-  * Gradio Deployment: Setting up the Gradio interface and deploying the model on Hugging Face for live interaction.
+---
 
-* `requirements.txt`: A file that lists all the required dependencies for running the notebook.
+## 📁 Project Structure
 
-## **Setup Instructions**
-
-1. Clone the Repository
-  Start by cloning the repository to your local machine:
 ```
-  git clone https://github.com/pirisc/Portfolio/blob/main/DogVision/DogVision.ipynb
+DogVision/
+├── Dog_Vision.ipynb       # Full pipeline: preprocessing → training → evaluation → deployment
+└── requirements.txt       # All dependencies
+└── README.md
 ```
-2. Install Dependencies
-   Make sure all dependencies are installed:
+
+Everything lives in a single, well-documented notebook — clean, readable, and easy to follow.
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/pirisc/Portfolio.git
+cd Portfolio/DogVision
 ```
-    pip install -r requirements.txt
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
 ```
-3. Set Up Kaggle API (For Dataset Access)
-   
-   To access the Kaggle dataset, you’ll need to set up your Kaggle API credentials. If you haven't done this yet:
-     Sign in to Kaggle and go to your account settings.
 
-     Create a new API token by clicking on Create New API Token and downloading the kaggle.json file.
+### 3. Configure Kaggle API (for dataset access)
 
-     Place the kaggle.json file in the ~/.kaggle/ directory on your local machine.
+The dataset is hosted on Kaggle, so you'll need to authenticate:
 
-     You can now download the dataset using the Kaggle API from within the notebook.
-  
+1. Log in to [Kaggle](https://www.kaggle.com) and go to **Account Settings**
+2. Click **Create New API Token** → this downloads a `kaggle.json` file
+3. Move it to the right location:
 
-4. Run the Notebook
-  Open the notebook Dog_Breed_Classifier.ipynb and follow the instructions within it to run the project.
+```bash
+mkdir -p ~/.kaggle
+mv kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json
+```
 
-## **Live Demo**
+The notebook will handle the dataset download from there.
 
-For a live demonstration, visit the deployed Gradio app hosted on [Hugging Face](https://huggingface.co/spaces/Sairii/Dog_Breeds). Upload an image of a dog, and the model will predict the breed in real-time.
+### 4. Run the Notebook
 
-## **Dataset**
+Open `Dog_Vision.ipynb` in Jupyter and run the cells top to bottom.
 
-The dataset used for training is from the Kaggle competition Dog Breed Identification. It contains over 10,000 images of dogs labeled with one of 120 breeds.
+---
 
-## **Prerequisites**
+## 🗂️ Dataset
 
-To run this project locally, the following are required:
+**Source:** [Kaggle — Dog Breed Identification](https://www.kaggle.com/c/dog-breed-identification)
 
-  * Python 3.x
+- 10,000+ labeled dog images
+- 120 distinct breeds
+- Provided as part of a Kaggle competition
 
-  * PyTorch
+---
 
-  * Torchvision
+## 🛠️ Tech Stack
 
-  * Gradio
+| Tool | Purpose |
+|---|---|
+| [PyTorch](https://pytorch.org/) | Model architecture & training |
+| [Torchvision](https://pytorch.org/vision/) | Image transforms & pretrained models |
+| [Gradio](https://gradio.app/) | Interactive web UI |
+| [Hugging Face Spaces](https://huggingface.co/spaces) | Model deployment & hosting |
+| [Kaggle API](https://github.com/Kaggle/kaggle-api) | Dataset access |
 
-  * Kaggle API for dataset download (as detailed above)
+**Requirements:** Python 3.x — see `requirements.txt` for full dependency list.
 
-  * Dependencies in `requirements.txt`
+---
 
-## **License**
-This project is licensed under the MIT License. See the `LICENSE.md` file for more information.
+## 🤝 Contributing
 
-## **Acknowledgments**
-  * PyTorch: For providing the powerful tools for building deep learning models.
-  
-  * Gradio: For creating a simple way to deploy machine learning models.
+Contributions are welcome! If you want to improve model accuracy, expand the breed list, or clean up the docs — fork the repo and open a PR. All improvements are appreciated.
 
-  * Kaggle: For hosting the competition and providing the dataset.
+---
 
-## **Contributing**
-If you would like to contribute to this project, feel free to fork the repo and submit a pull request. All contributions are welcome, including improving model performance, adding more breeds, or improving documentation.
+## 📄 License
 
+Licensed under the [MIT License](LICENSE.md) — use it, build on it, make it yours.
