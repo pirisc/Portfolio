@@ -117,7 +117,7 @@ A collection of competition notebooks focused on tabular data, featuring rigorou
 | Competition | Task | Best Score | Metric | 
 |---|---|---|---|
 |[Spaceship Titanic](https://www.kaggle.com/competitions/spaceship-titanic) | Binary Classification | 0.80430 | Accuracy |
-| [Titanic - ML from disaster](https://www.kaggle.com/competitions/titanic) | Binary Classification | 0.66507 | Accuracy | 
+| [Titanic - ML from disaster](https://www.kaggle.com/competitions/titanic) | Binary Classification | 0.77511 | Accuracy | 
 
 ---
 
