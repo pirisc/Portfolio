@@ -1,6 +1,6 @@
 # 🧠 Kaggle ML Competition Notebooks
  
-> A collection of machine learning projects developed for Kaggle competitions, covering Natural Language Processing and classification tasks. Each notebook is self-contained, well-documented, and built with a focus on clean preprocessing pipelines, feature engineering, and model interpretability.
+> A collection of machine learning projects developed for Kaggle competitions, covering classification and regression tasks. Each notebook is self-contained, well-documented, and built with a focus on clean preprocessing pipelines, feature engineering, and model interpretability.
  
 ---
  
@@ -10,7 +10,7 @@
 |---|---|---|---|
 | `Spaceship_Titanic` | Spaceship Titanic | Binary Classification | Feature Engineering, Ensemble Models |
 | `Titanic` | Titanic - ML from Disaster | Binary Classification | EDA, Feature Engineering, Classical ML |
- 
+| `House_Prices` | House Prices - Advanced Regression | Regression | Ordinal Encoding, Feature Engineering, XGBoost |
 ---
 
 ## 🗂️ Notebooks
@@ -42,12 +42,29 @@ The classic entry point to Kaggle. Predict survival on the Titanic using passeng
  
 ---
 
+### 🏠 House Prices
+**Competition:** [House Prices - Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
+ 
+Predict the final sale price of residential homes in Ames, Iowa using 79 explanatory features. A regression problem with rich feature engineering opportunities, complex missing value patterns, and a right-skewed target variable requiring log transformation.
+ 
+**Highlights:**
+- EDA with correlation matrix and categorical box plots to identify key predictors
+- Intelligent missing value imputation — structural absence vs. genuine gaps handled separately
+- Ordinal encoding for quality features (preserving Po < Fa < TA < Gd < Ex ordering)
+- Feature engineering: TotalSF, TotalBuiltArea, TotalBath, HouseAge, TotalPorchSF, binary flags
+- Model comparison: Ridge, Random Forest, Gradient Boosting, XGBoost, LightGBM with GridSearchCV
+- Log transformation of target variable to align training objective with RMSLE evaluation metric
+**Key Libraries:** `pandas`, `numpy`, `scikit-learn`, `xgboost`, `lightgbm`, `matplotlib`, `seaborn`
+ 
+---
+
 ## 📊 Results
  
 | Competition | Best Score | Metric |
 |---|---|---|
 | Spaceship Titanic | 0.80430 | Accuracy |
 | Titanic | 0.77511 | Accuracy |
+| House Prices | 0.12718 | RMSLE |
  
 *Scores will be updated as notebooks are refined.*
  
