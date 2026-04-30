@@ -112,12 +112,13 @@ End-to-end NLP project in two phases: fine-tuning a transformer model for **8-cl
 #### Kaggle Competition Notebooks
 > scikit-learn · XGBoost · LightGBM · Pandas · Feature Engineering · EDA
 
-A collection of competition notebooks focused on tabular data, featuring rigorous EDA, feature engineering, and ensemble methods.
+A collection of competition notebooks focused on tabular data, featuring rigorous EDA, intelligent missing value imputation, feature engineering, and ensemble methods across classification and regression tasks.
 
 | Competition | Task | Best Score | Metric | 
 |---|---|---|---|
 |[Spaceship Titanic](https://www.kaggle.com/competitions/spaceship-titanic) | Binary Classification | 0.80430 | Accuracy |
 | [Titanic - ML from disaster](https://www.kaggle.com/competitions/titanic) | Binary Classification | 0.77511 | Accuracy | 
+| [House Prices - Advanced Regression](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques) | Regression | 0.12718 | RMSLE |
 
 ---
 
